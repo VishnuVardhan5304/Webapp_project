@@ -1,0 +1,162 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+  	.container {
+  	width: 1300px;
+  	position: relative;
+  	margin: 0 auto; }
+  	
+  .row {
+  width: 1300px;
+  position: relative;
+  margin: 0 auto; }
+  
+  body {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #222;
+  font-weight: 400;
+  font-family: 'Montserrat';
+  background-image: url("../images/signup-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-position: center center;
+  padding: 115px 0; }
+  
+  .form-group {
+  overflow: hidden;
+  margin-bottom: 20px; }
+  
+  input[type=checkbox]:not(old) {
+  width: 2em;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  display: none; }
+  
+  h2{
+  	text-align : center;
+  	color : red;
+  	
+  }
+  
+  .form-input {
+  width: 100%;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  padding: 17px 20px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 500;
+  color: #222; }
+  .form-input::-webkit-input-placeholder {
+    color: #999; }
+  .form-input::-moz-placeholder {
+    color: #999; }
+  .form-input:-ms-input-placeholder {
+    color: #999; }
+  .form-input:-moz-placeholder {
+    color: #999; }
+  .form-input::-webkit-input-placeholder {
+    font-weight: 500; }
+  .form-input::-moz-placeholder {
+    font-weight: 500; }
+  .form-input:-ms-input-placeholder {
+    font-weight: 500; }
+  .form-input:-moz-placeholder {
+    font-weight: 500; }
+  .form-input:focus {
+    border: 1px solid transparent;
+    -webkit-border-image-source: -webkit-linear-gradient(to right, #9face6, #74ebd5);
+    -moz-border-image-source: -moz-linear-gradient(to right, #9face6, #74ebd5);
+    -o-border-image-source: -o-linear-gradient(to right, #9face6, #74ebd5);
+    border-image-source: linear-gradient(to right, #9face6, #74ebd5);
+    -webkit-border-image-slice: 1;
+    border-image-slice: 1;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    background-origin: border-box;
+    background-clip: content-box, border-box; }
+    .form-input:focus::-webkit-input-placeholder {
+      color: #222; }
+    .form-input:focus::-moz-placeholder {
+      color: #222; }
+    .form-input:focus:-ms-input-placeholder {
+      color: #222; }
+    .form-input:focus:-moz-placeholder {
+      color: #222; }
+  
+  	.form-submit {
+  width: 100%;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  padding: 17px 20px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(to right, #9C27B0, #E040FB);
+  text-transform: uppercase;
+  border: none;
+  }
+  	
+  </style>
+  </head>
+  
+  <body>
+  	
+  	<div class="container">
+  	<div class="row">
+  	<form action="Emp_add">
+  		<h2><u>Add Employee Details</u></h2>
+  		<br><br>
+  		<div class="form-group">
+  			<input type ="text" class="form-input" name="name" placeholder="Employee Name" pattern="[a-z A-Z]+" required="required">
+  		</div>
+  		
+  		<div class="form-group">
+  			<input type ="number" class="form-input" name="id" placeholder="Employee id" required="required">
+  		</div>
+  		
+  		<div class="form-group">
+  			<input type ="text" class="form-input" name="job" placeholder="Employee job" required="required">
+  		</div>
+  		
+  		<div class="form-group">
+  			<input type ="text" class="form-input" name="salary" placeholder="Employee salary" required="required">
+  		</div>
+  		
+  		<div class="form-group">
+  			<input type ="text" class="form-input" name="phno" placeholder="Employee ph.no" pattern="(0/91)?[7-9][0-9]{9}" required="required">
+  		</div>
+  		
+  		
+  		<div class="form-group">
+  			<button type="submit" class="form-submit">Add</button>
+  		</div>
+  		
+  	</form>
+  	
+  	</div>
+  	
+  	</div>
+  </body>
+  
+  </html>
